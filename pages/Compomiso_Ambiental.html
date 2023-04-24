@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="Daniel Cerquera" content="Savilla, Recolección y Aprovechamiento, Materiales, BIC, sociedades">
+    <title>R. Sevilla BIC</title>
+    <link rel="shortcut icon" href="../source/Log BIC1.png">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/5.0/examples/carousel/carousel.css" rel="stylesheet">
+    <meta name="chromesniffer" id="chromesniffer_meta" content="{&quot;Bootstrap&quot;:-1}">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            AOS.init();
+        });
+
+
+    </script>
+
+    <style>
+        .bg-dark {
+            background-color: #9cd494 !important;
+        }
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        body {
+            padding-bottom: 0rem;
+        }
+
+        .whatsapp {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            z-index: 100;
+        }
+
+        .whatsapp-icon {
+            margin-top: 13px;
+        }
+
+        .whatsapp:hover {
+            color: black;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body style="cursor: auto;">
+    <a href="https://wa.me/573508382041?text=Me gustaría contactarme con ustedes" class="whatsapp" target="_blank"> <i
+            class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+    <div id="viva-subtitle-frame" class="viva-subtitle-frame"
+        style="top: 16px; visibility: hidden; min-width: 640px; left: 50%; transform: translateX(-304px); pointer-events: none;">
+        <div class="viva-subtitle-wrapper text-size__undefined"></div>
+        <div class="resize-container__right"></div>
+        <div class="resize-container__left"></div>
+        <div class="resize-container__bottom"></div>
+        <div class="resize-container__top"></div>
+        <div class="resize-container__diagonal-left-bottom"></div>
+        <div class="resize-container__diagonal-left-top"></div>
+        <div class="resize-container__diagonal-right-bottom"></div>
+        <div class="resize-container__diagonal-right-top"></div>
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <img src="../source/Log BIC1.png" alt="Logo" style="height: 40px;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <strong><a class="nav-link" href="../pages/Index.html">Inicio</a></strong>
+                        </li>
+                        <li class="nav-item">
+                            <strong>
+                                <a class="nav-link" href="../pages/R&A.html">Recolección y Aprovechamiento</a>
+                            </strong>
+                        </li>
+                        <li class="nav-item">
+                            <strong>
+                                <a class="nav-link" href="../pages/Compomiso_Ambiental.html">Compromiso Ambiental</a>
+                            </strong>
+                        </li>
+                        <li class="nav-item">
+                            <strong>
+                                <a class="nav-link" href="../pages/Contacto.html">Contacto</a>
+                            </strong>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                    class=""></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../source/Banner_1.jpg" class="d-block w-100" alt="Wild Landscape">
+
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Savilla Ambienta</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+        </div>
+
+        <div class="container marketing">
+
+            <hr class="featurette-divider">
+
+            <div class="row aos-init aos-animate" data-aos="fade-up" data-aos-duration="5000">
+                <div class="col-md-7">
+                    <h2>Nuestra Política Ambiental<br>
+                    </h2>
+                    <p class="lead">La empresa establece un marco común para la definición de programas, definición de
+                        objetivos y realización de actividades, que contribuyan con el sistema de gestión ambiental, que
+                        lleven a la organización a la mejora continua. Para cumplir estos compromisos R. Savilla ha
+                        establecido los siguientes objetivos y principios:</p>
+                    <br>
+                    <h2>Objetivo General</h2>
+                    <p>
+                        Promover el manejo de residuos por medio de reciclaje y separación adecuada, obteniendo
+                        alternativas eficientes de aprovechamiento, que incorporen estos materiales nuevamente a la
+                        cadena de valor de distintos productos, gestionando materiales a través de una economía
+                        circular, procurando el ahorro de agua y energía.
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <img src="../source/Politicas.PNG" alt="Economía Circular" width="500" height="500">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette aos-init aos-animate" data-aos="fade-up" data-aos-duration="5000">
+                <div class="col-md-12 order-md-2">
+                    <h2>Objetivos y Principios</h2>
+                    <br>
+                    <ol class="lead">
+                        <li>Garantizar el cumplimiento de la Legislación ambiental aplicable, así como los compromisos
+                            adquiridos por la empresa en términos ambientales.</li>
+                        <li>Prevenir, reducir y mitigar los impactos ambientales significativos de la empresa, apoyando
+                            iniciativas dirigidas a contrarrestar el cambio climático. </li>
+                        <li>Contribuir a la sensibilización ambiental en los empleados, proveedores y clientes,
+                            fomentando la protección y el cuidado de nuestro entorno natural.</li>
+                        <li>Fortalecer el uso eficiente y ahorro de agua en la empresa R. Savilla S.A.S, eliminando
+                            consumos excesivos y desperdicios, estableciendo programas que procuren la reducción en los
+                            indicadores del 5% anual de los metros cúbicos.</li>
+                        <li>Fortalecer el uso eficiente y ahorro de energía en la empresa R. Savilla S.A.S, eliminando
+                            desperdicios y mal uso, estableciendo programas que procuren la reducción en los indicadores
+                            del 5% anual de los kilovatios/hora.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row aos-init aos-animate" data-aos="fade-up" data-aos-duration="5000">
+                <div class="col-md-12">
+                    <p class="lead">Realizamos aprovechamiento de material reciclable y nuestros residuos son
+                        aprovechados por empresas aliadas para la reincorporación de dichos elementos, como materia
+                        prima en nuestra cadena de valor.F</p>
+                </div>
+                <div class="col-md-12">
+                    <iframe width="100%" height="450F" src="https://www.youtube.com/embed/5M-DtIU4zgY"
+                        title="Gestión Ambiental R. Savilla SAS" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+
+            <div class="row aos-init aos-animate" data-aos="fade-up" data-aos-duration="5000">
+                <div class="col-md-7">
+                    <h2>Hacemos Parte</h2>
+                </div>
+                <div class="col-md-5">
+                    <img src="../source/Negocios Verdes.png" alt="Economía Circular" width="100%" height="400">
+                    <p class="lead">Estamos inscritos y hacemos parte del programa de <strong>negocios
+                            verdes</strong>reconocido por la
+                        <strong>Secretaía Distrital de Ambiente</strong>.
+                    </p>
+                </div>
+                <div class="col-md-12">
+                    <h3>Puedes buscarnos en el Eco Directorios seleccionando <a
+                            href="https://sites.google.com/ambientebogota.gov.co/ecodirectorioempresarial/negocios-verdes?authuser=0"
+                            target="_blank">Aquí</a>
+                    </h3>
+                </div>
+            </div>
+            <hr class="featurette-divider">
+
+            <div class="row aos-init aos-animate" data-aos="fade-up" data-aos-duration="5000">
+                <div class="col-md-6">
+                    <img src="../source/pread.png" alt="PREAD" width="500" height="500">
+                    <p class="lead">Realizamos nuestro sistema de gestión ambiental en acompañamiento y participación de
+                        programas de
+                        reconocimiento de la Secretaría de Ambiente de Bogotá. Programa de Excelencia Ambiental
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="../source/r savilla.png" alt="Economía Circular" width="500" height="500">
+                    <p class="lead">Estamos fortaleciendo nuestro sistema de gestión ambiental.</p>
+                </div>
+            </div>
+
+
+
+            <!-- /END THE FEATURETTES -->
+
+        </div><!-- /.container -->
+        <br>
+        <br>
+        <br>
+
+
+        <!-- FOOTER -->
+
+        <footer class="bg-dark text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fa fa-facebook"></i></a>
+
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fa fa-twitter"></i></a>
+
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fa fa-google"></i></i></a>
+
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fa fa-instagram"></i></a>
+
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fa fa-youtube"></i></a>
+
+                </section>
+            </div>
+
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                <strong>Dirección:</strong> Cra 86B # 42-06 Sur, Patio Bonito, Bogotá DC. <strong>WhatsApp:</strong> +57
+                3508382041
+                <strong>Tel:</strong> (601) 4815874 <strong>Cel:</strong> 3508382043 <strong>Email:</strong>
+                reciclajesavilla@hotmail.com
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="Daniel Cerquera" content="Savilla, Recolección y Aprovechamiento, Materiales, BIC, sociedades">
+    <title>R. Sevilla BIC</title>
+    <link rel="shortcut icon" href="../source/Log BIC1.png">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/5.0/examples/carousel/carousel.css" rel="stylesheet">
+    <meta name="chromesniffer" id="chromesniffer_meta" content="{&quot;Bootstrap&quot;:-1}">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            AOS.init();
+        });
+
+
+    </script>
+
+    <style>
+        .bg-dark {
+            background-color: #9cd494 !important;
+        }
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        body {
+            padding-bottom: 0rem;
+        }
+
+        .whatsapp {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            z-index: 100;
+        }
+
+        .whatsapp-icon {
+            margin-top: 13px;
+        }
+
+        .whatsapp:hover {
+            color: black;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body style="cursor: auto;">
+
+    <a href="https://wa.me/573508382041?text=Me gustaría contactarme con ustedes" class="whatsapp" target="_blank"> <i
+            class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+    <div id="viva-subtitle-frame" class="viva-subtitle-frame"
+        style="top: 16px; visibility: hidden; min-width: 640px; left: 50%; transform: translateX(-304px); pointer-events: none;">
+        <div class="viva-subtitle-wrapper text-size__undefined"></div>
+        <div class="resize-container__right"></div>
+        <div class="resize-container__left"></div>
+        <div class="resize-container__bottom"></div>
+        <div class="resize-container__top"></div>
+        <div class="resize-container__diagonal-left-bottom"></div>
+        <div class="resize-container__diagonal-left-top"></div>
+        <div class="resize-container__diagonal-right-bottom"></div>
+        <div class="resize-container__diagonal-right-top"></div>
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <img src="../source/Log BIC1.png" alt="Logo" style="height: 40px;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <strong><a class="nav-link" href="../pages/Home.html">Inicio</a></strong>
+                        </li>
+                        <li class="nav-item">
+                            <strong>
+                                <a class="nav-link" href="../pages/R&A.html">Recolección y Aprovechamiento</a>
+                            </strong>
+                        </li>
+                        <li class="nav-item">
+                            <strong>
+                                <a class="nav-link" href="../pages/Compomiso_Ambiental.html">Compromiso Ambiental</a>
+                            </strong>
+                        </li>
+                        <li class="nav-item">
+                            <strong>
+                                <a class="nav-link" href="../pages/Contacto.html">Contacto</a>
+                            </strong>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                    class=""></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../source/Banner_1.jpg" class="d-block w-100" alt="Wild Landscape">
+
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>R. SAVILLA SAS BIC.</h1>
+                            <p>Recolección y Aprovechamiento de Materiales.</p>
+                            <p>Nit: 900950210-0.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../source/Banner_2.jpeg" class="d-block w-100" alt="Wild Landscape">
+
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>R. SAVILLA SAS BIC.</h1>s
+                            <p>Recolección y Aprovechamiento de Materiales.</p>
+                            <p>Nit: 900950210-0.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="container marketing">
+            <div class="row aos-init aos-animate" data-aos="fade-up" data-aos-duration="5000">
+                <div class="col-lg-4">
+                    <img src="../source/Mision.png" alt="Mision" style="width: 140px;height: 140px;">
+                    <h2>Misión</h2>
+                    <p>Contribuir en la recuperación de la madera y afines, aportando en la preservación del medio
+                        ambiente y los recursos naturales, realizando y ejecutando proyectos que surjan desde un
+                        pensamiento ecológico y sostenible, en beneficio de las personas y el entorno, de manera
+                        normativa, con calidad y ambiente de familia.</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="../source/Vision.png" alt="Vision" style="width: 140px;height: 140px;">
+                    <h2>Visión</h2>
+                    <p>Ser una empresa sostenible en la recuperación y nuevo uso de la madera y afines, preocupada por
+                        conservar el ambiente, con desarrollo económico, construyendo una conciencia humanista y
+                        ambientalista, que reconozca la obra de Dios en el cuidado del planeta.</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="../source/Valores.png" alt="Valores y Principios" style="width: 140px;height: 140px;">
+
+
+                    <h2>Principio y Valores</h2>
+                    <p>Nuestros principios y valores definen quienes somos, en lo que pensamos, para saber cómo debemos
+                        interactuar con nuestro equipo de trabajo y clientes.
+                        <br>
+                        <br>
+                        1. Ambiente familiar
+                        <br>
+                        2. Servicio
+                        <br>
+                        3. Lealtad y transparencia
+                        <br>
+                        4. Cuidado del medio ambiente
+                    </p>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row aos-init aos-animate" data-aos="fade-up" data-aos-duration="5000">
+                <div class="col-md-7">
+                    <h2>Somos una sociedad BIC <br>
+                        <span class="text-muted">Bienes e Interés Colectivo.</span>
+                    </h2>
+                    <p class="lead">Desde 2021, somos una empresa que incorpora un propósito social y ambiental que va
+                        más allá del beneficio e interés para sus accionistas.
+
+                        as Sociedades BIC combinan simultáneamente las ventajas económicas de la actividad mercantil,
+                        con la posibilidad de contribuir al medio ambiente, al bienestar de los trabajadores y al
+                        interés de la colectividad.</p>
+                </div>
+                <div class="col-md-5">
+                    <img src="../source/Sociedades Bic.png" alt="Sociedades BIC" width="500" height="500">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette aos-init aos-animate" data-aos="fade-up" data-aos-duration="5000">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">Reporte de Gestión BIC 2021</h2>
+                    <p class="lead">Presentamos nuestro primer reporte de gestión, base para nuestra medición de avance
+                        en los próximos reportes.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <iframe src="https://drive.google.com/file/d/1ANS_jqlmRLaYd6Qbthir9E6rFkiOswdD/preview?authuser=0"
+                        style="width:100%; height:700px;" frameborder="0"></iframe>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette aos-init aos-animate" data-aos="fade-up" data-aos-duration="5000">
+                <div class="col-md-12">
+                    <h2 class="featurette-heading" style="text-align: center;">Nuestros Productos</h2>
+                </div>
+            </div>
+            <div class="row aos-init aos-animate" data-aos="fade-up" data-aos-duration="5000">
+                <div class="col-md-4 elemento-card">
+                    <div id="imagenCard">
+                        <img src="../source/BaseCamaCard1.jpg" alt="Base Cama 1" width="100%">
+                    </div>
+                    <div id="textoCard">
+                        <h3>Base Cama</h3>
+                    </div>
+                </div>
+                <div class="col-md-4 elemento-card">
+                    <div id="imagenCard">
+                        <img src="../source/BaseCamaCard2.jpg" alt="Base Cama 2" width="100%">
+                    </div>
+                    <div id="textoCard">
+                        <h3 style="text-align: center;">Base Camas</h3>
+                    </div>
+                </div>
+                <div class="col-md-4 elemento-card">
+                    <div id="imagenCard">
+                        <img src="../source/CabecerosCard3.jpg" alt="Cabeceros" width="100%">
+                    </div>
+                    <div id="textoCard">
+                        <h3 style="text-align: center;">Cabeceros</h3>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette aos-init aos-animate" data-aos="fade-up" data-aos-duration="5000">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Reciclaje y Disposición Final</span></h2>
+                    <p class="lead">Somos una empresa que presta el servicio de recolección y aprovechamiento de
+                        residuos sólidos en varias ciudades a nivel nacional. Generamos certificados de gestión y
+                        disposición final..</p>
+                </div>
+                <div class="col-md-5">
+                    <iframe width="100%" height="420" src="https://www.youtube.com/embed/sHGsFYInU74"
+                        title="R savilla sas" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                </div>
+            </div>
+
+
+
+            <hr class="featurette-divider">
+
+
+
+            <!-- /END THE FEATURETTES -->
+
+        </div><!-- /.container -->
+
+
+        <!-- FOOTER -->
+
+        <footer class="bg-dark text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fa fa-facebook"></i></a>
+
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fa fa-twitter"></i></a>
+
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fa fa-google"></i></i></a>
+
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fa fa-instagram"></i></a>
+
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fa fa-youtube"></i></a>
+
+                </section>
+            </div>
+
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                <strong>Dirección:</strong> Cra 86B # 42-06 Sur, Patio Bonito, Bogotá DC. <strong>WhatsApp:</strong> +57
+                3508382041
+                <strong>Tel:</strong> (601) 4815874 <strong>Cel:</strong> 3508382043 <strong>Email:</strong>
+                reciclajesavilla@hotmail.com
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </main>
+
+</body>
+
+</html>

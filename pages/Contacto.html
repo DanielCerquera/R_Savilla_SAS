@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="Daniel Cerquera" content="Savilla, Recolección y Aprovechamiento, Materiales, BIC, sociedades">
+    <title>R. Sevilla BIC</title>
+    <link rel="shortcut icon" href="../source/Log BIC1.png">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/5.0/examples/carousel/carousel.css" rel="stylesheet">
+    <meta name="chromesniffer" id="chromesniffer_meta" content="{&quot;Bootstrap&quot;:-1}">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Gallery -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+
+    <script>
+
+        $('.portfolio-menu ul li').click(function () {
+            $('.portfolio-menu ul li').removeClass('active');
+            $(this).addClass('active');
+
+            var selector = $(this).attr('data-filter');
+            $('.portfolio-item').isotope({
+                filter: selector
+            });
+            return false;
+        });
+
+        $(document).ready(function () {
+            AOS.init();
+
+            var popup_btn = $('.popup-btn');
+            popup_btn.magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+
+        });
+
+    </script>
+
+    <style>
+        .bg-dark {
+            background-color: #9cd494 !important;
+        }
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        body {
+            padding-bottom: 0rem;
+        }
+
+        .whatsapp {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            z-index: 100;
+        }
+
+        .whatsapp-icon {
+            margin-top: 13px;
+        }
+
+        .whatsapp:hover {
+            color: black;
+        }
+
+        .portfolio-menu {
+            text-align: center;
+        }
+
+        .portfolio-menu ul li {
+            display: inline-block;
+            margin: 0;
+            list-style: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            -webkit-transition: all 05s ease;
+            -moz-transition: all 05s ease;
+            -ms-transition: all 05s ease;
+            -o-transition: all 05s ease;
+            transition: all .5s ease;
+        }
+
+        .portfolio-item .item {
+            float: left;
+            margin-bottom: 10px;
+        }
+
+        .item img {
+            height: 100%;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body style="cursor: auto;">
+
+    <a href="https://wa.me/573508382041?text=Me gustaría contactarme con ustedes" class="whatsapp" target="_blank"> <i
+            class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+    <div id="viva-subtitle-frame" class="viva-subtitle-frame"
+        style="top: 16px; visibility: hidden; min-width: 640px; left: 50%; transform: translateX(-304px); pointer-events: none;">
+        <div class="viva-subtitle-wrapper text-size__undefined"></div>
+        <div class="resize-container__right"></div>
+        <div class="resize-container__left"></div>
+        <div class="resize-container__bottom"></div>
+        <div class="resize-container__top"></div>
+        <div class="resize-container__diagonal-left-bottom"></div>
+        <div class="resize-container__diagonal-left-top"></div>
+        <div class="resize-container__diagonal-right-bottom"></div>
+        <div class="resize-container__diagonal-right-top"></div>
+    </div>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <img src="../source/Log BIC1.png" alt="Logo" style="height: 40px;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <strong><a class="nav-link" href="../pages/Index.html">Inicio</a></strong>
+                        </li>
+                        <li class="nav-item">
+                            <strong>
+                                <a class="nav-link" href="../pages/R&A.html">Recolección y Aprovechamiento</a>
+                            </strong>
+                        </li>
+                        <li class="nav-item">
+                            <strong>
+                                <a class="nav-link" href="../pages/Compomiso_Ambiental.html">Compromiso Ambiental</a>
+                            </strong>
+                        </li>
+                        <li class="nav-item">
+                            <strong>
+                                <a class="nav-link" href="../pages/Contacto.html">Contacto</a>
+                            </strong>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                    class=""></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../source/Banner_1.jpg" class="d-block w-100" alt="Wild Landscape">
+
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>R. SAVILLA SAS BIC.</h1>
+                            <p>Recolección y Aprovechamiento de Materiales.</p>
+                            <p>Nit: 900950210-0.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+        </div>
+
+        <div class="container marketing">
+
+            <hr class="featurette-divider">
+
+            <div class="row aos-init aos-animate" data-aos="fade-up" data-aos-duration="5000">
+                <div class="col-md-12">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6674.611313274172!2d-74.17307502321944!3d4.628873042272346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9e8002466197%3A0xa6b8f93b0217372!2sCra.%2086%20Bis%20%2342%20G%2C%20Kennedy%2C%20Bogot%C3%A1%2C%20Colombia!5e1!3m2!1ses!2sus!4v1682298607306!5m2!1ses!2sus"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette aos-init aos-animate" data-aos="fade-up" data-aos-duration="5000">
+                <div class="col-md-12">
+                    <h2 class="featurette-heading" style="text-align: center;">Sede Principal</h2>
+
+                    <div class="portfolio-item row">
+                        <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="../source/sede1.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid" src="../source/sede1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="../source/sede2.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid" src="../source/sede2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="../source/sede3.jpg" class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid" src="../source/sede3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-psd/laptop-mockup-table-with-plants_23-2147955548.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-psd/laptop-mockup-table-with-plants_23-2147955548.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/blank-colorful-adhesive-notes-against-wooden-wall-with-office-stationeries-laptop_23-2148052717.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/blank-colorful-adhesive-notes-against-wooden-wall-with-office-stationeries-laptop_23-2148052717.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-psd/woman-using-laptop-smartphone_53876-76350.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-psd/woman-using-laptop-smartphone_53876-76350.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/young-couple-taking-selfie-mobile-phone-against-blue-background_23-2148056292.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/young-couple-taking-selfie-mobile-phone-against-blue-background_23-2148056292.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/close-up-blonde-woman-sitting-sofa-using-laptop-with-blank-white-screen_23-2148028738.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/close-up-blonde-woman-sitting-sofa-using-laptop-with-blank-white-screen_23-2148028738.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/group-happy-friends-taking-selfie-cellphone_23-2147859575.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/group-happy-friends-taking-selfie-cellphone_23-2147859575.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/joyful-pretty-girl-with-curly-hair-takes-selfie-mobile-phone_8353-6635.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/joyful-pretty-girl-with-curly-hair-takes-selfie-mobile-phone_8353-6635.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item selfie col-lg-3 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/female-friends-sitting-car-hood-taking-self-portrait_23-2147855623.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/female-friends-sitting-car-hood-taking-self-portrait_23-2147855623.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette aos-init aos-animate" data-aos="fade-up" data-aos-duration="5000">
+                <div class="col-md-6">
+
+                    <table style="text-align: center;">
+                        <tr>
+                            <th>
+                                <h2 class="featurette-heading">Contacto</h2>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td><a href="mailto:reciclajesavilla@hotmail.com">reciclajesavilla@hotmail.com</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="mailto:savilla.ambiental@gmail.com">savilla.ambiental@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>Wilson Pérez: WhatsApp: +57 3508382041</td>
+                        </tr>
+                        <tr>
+                            <td>Orlando Sanabriae Cel: 3508382043</td>
+                        </tr>
+                        <tr>
+                            <td>Tel: (1) 4815874</td>
+                        </tr>
+                        <tr>
+                            <td>Cra 86B # 42-06 Sur, Bogotá DC.</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <table style="text-align: center;">
+                        <tr>
+                            <th>
+                                <h2 class="featurette-heading">Horario de Apertura</h2>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>Dom Cerrado</td>
+                        </tr>
+                        <tr>
+                            <td>Lun 7:00 – 17:00 </td>
+                        </tr>
+                        <tr>
+                            <td>Mar 7:00 – 17:00</td>
+                        </tr>
+                        <tr>
+                            <td> Mié 7:00 – 17:00 </td>
+                        </tr>
+                        <tr>
+                            <td>Jue 7:00 – 17:00 </td>
+                        </tr>
+                        <tr>
+                            <td>Vie 7:00 – 17:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sáb 7:00 – 13:00 </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row aos-init aos-animate" data-aos="fade-up" data-aos-duration="5000">
+                <div class="col-md-12">
+                    <p class="lead">¿Tienes alguna Petición, Queja, Reclamo o Sugerencia? por favor regístrala <a
+                            href="https://forms.gle/em4Qczg4Lin4z3FW9" target="_blank">aquí</a>:</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FOOTER -->
+
+        <footer class="bg-dark text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fa fa-facebook"></i></a>
+
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fa fa-twitter"></i></a>
+
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fa fa-google"></i></i></a>
+
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fa fa-instagram"></i></a>
+
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                            class="fa fa-youtube"></i></a>
+
+                </section>
+            </div>
+
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                <strong>Dirección:</strong> Cra 86B # 42-06 Sur, Patio Bonito, Bogotá DC. <strong>WhatsApp:</strong> +57
+                3508382041
+                <strong>Tel:</strong> (601) 4815874 <strong>Cel:</strong> 3508382043 <strong>Email:</strong>
+                reciclajesavilla@hotmail.com
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </main>
+
+</body>
+
+</html>
