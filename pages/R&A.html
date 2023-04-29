@@ -15,37 +15,26 @@
     <!-- Custom styles for this template -->
     <link href="https://getbootstrap.com/docs/5.0/examples/carousel/carousel.css" rel="stylesheet">
     <meta name="chromesniffer" id="chromesniffer_meta" content="{&quot;Bootstrap&quot;:-1}">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!--Slick Carousel Slider-->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <!--Slick Carousel Slider-->
-
-
     <script>
-
         $(document).ready(function () {
-
             AOS.init();
-
-            $('.items').slick({
-                infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 3
-            });
-
         });
+
 
     </script>
 
     <style>
+        .navbar-dark .navbar-nav .nav-link {
+            color: white;
+        }
+
         .bg-dark {
-            background-color: #9cd494 !important;
+            background-color: #84cb74 !important;
         }
 
         .bd-placeholder-img {
@@ -64,34 +53,6 @@
 
         body {
             padding-bottom: 0rem;
-        }
-
-        .items {
-            width: 90%;
-            margin: 0px auto;
-            margin-top: 100px;
-        }
-
-        .slick-slide {
-            margin: 10px;
-            border-left: 1px solid #2c5c84;
-            border-right: 1px solid #2c5c84;
-            height: 450px;
-            max-height: 450px;
-        }
-
-        .slick-slide img {
-            width: 100%;
-            border: 0px solid #000000;
-            height: 250px;
-        }
-
-        .slick-next:before {
-            color: black;
-        }
-
-        .slick-prev:before {
-            color: black;
         }
 
         .whatsapp {
@@ -115,12 +76,35 @@
         .whatsapp:hover {
             color: black;
         }
+
+        a {
+            color: #2d5c84;
+            text-decoration: auto;
+        }
+        a:hover {
+            color: #2d5c84;
+        }
+
+        h3 {
+            color: #2d5c84;
+        }
+
+
+        h2 {
+            color: #2d5c84;
+        }
+
+        span.text-muted {
+            color: #2D5C85 !important;
+        }
     </style>
+
+
+
 
 </head>
 
 <body style="cursor: auto;">
-
     <a href="https://wa.me/573508382041?text=Me gustaría contactarme con ustedes" class="whatsapp" target="_blank"> <i
             class="fa fa-whatsapp whatsapp-icon"></i></a>
 
@@ -137,11 +121,12 @@
         <div class="resize-container__diagonal-right-top"></div>
     </div>
 
-
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <div class="container-fluid">
-                <img src="../source/Log BIC1.png" alt="Logo" style="height: 40px;">
+                <a class="nav-link" href="../pages/Index.html">
+                    <img src="../source/Log BIC1.png" alt="Logo" style="height: 65px;">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -191,8 +176,7 @@
 
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>Recolección y Aprovechamiento de Materiales Reciclables</h1>
-                            <p>¿Qué tipo de materiales recuperamos?</p>
+                            <h1>Savilla Ambiental</h1>
                         </div>
                     </div>
                 </div>
@@ -203,75 +187,117 @@
             </button>
         </div>
 
-
         <div class="container marketing">
-
-            <div class="items">
-                <div>
-                    <img src="../source/madera 2.jpg" alt="Madedra">
-                    <h2 style="text-align: center;">Madera</h2>
-                    <ol>
-                        <li>Estibas.</li>
-                        <li>Tablas.</li>
-                        <li>Tablones.</li>
-                        <li>Madera de diferente medida.</li>
-                    </ol>
-                </div>
-                <div>
-                    <img src="../source/plastico.jpg" alt="Madedra">
-                    <h2 style="text-align: center;">Plástico</h2>
-                    <ol>
-                        <li>Retal.</li>
-                        <li>Tapas.</li>
-                        <li>Bolsa.</li>
-                        <li>Botellas.</li>
-                    </ol>
-                </div>
-                <div>
-                    <img src="../source/Cartón.jpeg" alt="Madedra">
-                    <h2 style="text-align: center;">Cartón</h2>
-                    <ol>
-                        <li>Plegadiza.</li>
-                        <li>Láminas de cartón.</li>
-                        <li>Cajas de diferentes tamaños.</li>
-                        <li>Tetra Pack.</li>
-                        <li>Polyboard.</li>
-                    </ol>
-                </div>
-                <div>
-                    <img src="../source/papel.jpg" alt="Madedra">
-                    <h2 style="text-align: center;">Papel</h2>
-                    <ol>
-                        <li>Archivo.</li>
-                        <li>Periódico.</li>
-                        <li>Karft.</li>
-                    </ol>
-                </div>
-                <div>
-                    <img src="../source/aluminio.jpg" alt="Madedra">
-                    <h2 style="text-align: center;">Material Métalico</h2>
-                    <ol>
-                        <li>Aluminio.</li>
-                        <li>Hierro.</li>
-                        <li>Otros.</li>
-                    </ol>
-                </div>
-            </div>
-
-            <p class="featurette-heading" style="text-align: center;">Generamos certificado de aprovechamiento</p>
 
             <hr class="featurette-divider">
 
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 style="text-align: center;">¿Estás interesado?</h2>
+            <div class="row aos-init aos-animate" data-aos="fade-up" data-aos-duration="5000">
+                <div class="col-md-7">
+                    <h2>Nuestra Política Ambiental<br>
+                    </h2>
+                    <p class="lead">La empresa establece un marco común para la definición de programas, definición de
+                        objetivos y realización de actividades, que contribuyan con el sistema de gestión ambiental, que
+                        lleven a la organización a la mejora continua. Para cumplir estos compromisos R. Savilla ha
+                        establecido los siguientes objetivos y principios:</p>
                     <br>
-                    <p class="lead">Escríbenos a <a href="mailto:reciclajesavilla@hotmail">reciclajesavilla@hotmail</a>
-                        para obtener más información.
+                    <h2>Objetivo General</h2>
+                    <p>
+                        Promover el manejo de residuos por medio de reciclaje y separación adecuada, obteniendo
+                        alternativas eficientes de aprovechamiento, que incorporen estos materiales nuevamente a la
+                        cadena de valor de distintos productos, gestionando materiales a través de una economía
+                        circular, procurando el ahorro de agua y energía.
                     </p>
                 </div>
+                <div class="col-md-5">
+                    <img src="../source/Politicas.PNG" alt="Economía Circular" width="500" height="500">
+                </div>
             </div>
-        </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette aos-init aos-animate" data-aos="fade-up" data-aos-duration="5000">
+                <div class="col-md-12 order-md-2">
+                    <h2>Objetivos y Principios</h2>
+                    <br>
+                    <ol class="lead">
+                        <li>Garantizar el cumplimiento de la Legislación ambiental aplicable, así como los compromisos
+                            adquiridos por la empresa en términos ambientales.</li>
+                        <li>Prevenir, reducir y mitigar los impactos ambientales significativos de la empresa, apoyando
+                            iniciativas dirigidas a contrarrestar el cambio climático. </li>
+                        <li>Contribuir a la sensibilización ambiental en los empleados, proveedores y clientes,
+                            fomentando la protección y el cuidado de nuestro entorno natural.</li>
+                        <li>Fortalecer el uso eficiente y ahorro de agua en la empresa R. Savilla S.A.S, eliminando
+                            consumos excesivos y desperdicios, estableciendo programas que procuren la reducción en los
+                            indicadores del 5% anual de los metros cúbicos.</li>
+                        <li>Fortalecer el uso eficiente y ahorro de energía en la empresa R. Savilla S.A.S, eliminando
+                            desperdicios y mal uso, estableciendo programas que procuren la reducción en los indicadores
+                            del 5% anual de los kilovatios/hora.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row aos-init aos-animate" data-aos="fade-up" data-aos-duration="5000">
+                <div class="col-md-12">
+                    <p class="lead">Realizamos aprovechamiento de material reciclable y nuestros residuos son
+                        aprovechados por empresas aliadas para la reincorporación de dichos elementos, como materia
+                        prima en nuestra cadena de valor.F</p>
+                </div>
+                <div class="col-md-12">
+                    <iframe width="100%" height="450F" src="https://www.youtube.com/embed/5M-DtIU4zgY"
+                        title="Gestión Ambiental R. Savilla SAS" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+
+            <div class="row aos-init aos-animate" data-aos="fade-up" data-aos-duration="5000">
+                <div class="col-md-7">
+                    <h2>Hacemos Parte</h2>
+                </div>
+                <div class="col-md-5">
+                    <img src="../source/Negocios Verdes.png" alt="Economía Circular" width="100%" height="400">
+                    <p class="lead">Estamos inscritos y hacemos parte del programa de <strong>negocios
+                            verdes</strong>reconocido por la
+                        <strong>Secretaía Distrital de Ambiente</strong>.
+                    </p>
+                </div>
+                <div class="col-md-12">
+                    <h3>Puedes buscarnos en el Eco Directorios seleccionando <a
+                            href="https://sites.google.com/ambientebogota.gov.co/ecodirectorioempresarial/negocios-verdes?authuser=0"
+                            target="_blank">Aquí</a>
+                    </h3>
+                </div>
+            </div>
+            <hr class="featurette-divider">
+
+            <div class="row aos-init aos-animate" data-aos="fade-up" data-aos-duration="5000">
+                <div class="col-md-6">
+                    <img src="../source/pread.png" alt="PREAD" width="500" height="500">
+                    <p class="lead">Realizamos nuestro sistema de gestión ambiental en acompañamiento y participación de
+                        programas de
+                        reconocimiento de la Secretaría de Ambiente de Bogotá. Programa de Excelencia Ambiental
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="../source/r savilla.png" alt="Economía Circular" width="500" height="500">
+                    <p class="lead">Estamos fortaleciendo nuestro sistema de gestión ambiental.</p>
+                </div>
+            </div>
+
+
+
+            <!-- /END THE FEATURETTES -->
+
+        </div><!-- /.container -->
+        <br>
+        <br>
+        <br>
+
 
         <!-- FOOTER -->
 
