@@ -1,314 +1,375 @@
-<!DOCTYPE html>
-<html>
+    <!DOCTYPE html>
+    <html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="Daniel Cerquera" content="Savilla, Recolección y Aprovechamiento, Materiales, BIC, sociedades">
-    <title>R. Sevilla BIC</title>
-    <link rel="shortcut icon" href="../source/Log BIC1.png">
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- Custom styles for this template -->
-    <link href="https://getbootstrap.com/docs/5.0/examples/carousel/carousel.css" rel="stylesheet">
-    <meta name="chromesniffer" id="chromesniffer_meta" content="{&quot;Bootstrap&quot;:-1}">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="Daniel Cerquera" content="Savilla, Recolección y Aprovechamiento, Materiales, BIC, sociedades">
+        <title>R. Sevilla BIC</title>
+        <link rel="shortcut icon" href="../source/Log BIC1.png">
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- Custom styles for this template -->
+        <link href="https://getbootstrap.com/docs/5.0/examples/carousel/carousel.css" rel="stylesheet">
+        <meta name="chromesniffer" id="chromesniffer_meta" content="{&quot;Bootstrap&quot;:-1}">
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!--Slick Carousel Slider-->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <!--Slick Carousel Slider-->
+        <!--Slick Carousel Slider-->
+        <link rel="stylesheet" type="text/css"
+            href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!--Slick Carousel Slider-->
 
 
-    <script>
+        <script>
 
-        $(document).ready(function () {
+            $(document).ready(function () {
 
-            AOS.init();
+                AOS.init();
 
-            $('.items').slick({
-                infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 3
+                $('.items').slick({
+                    infinite: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                });
+
             });
 
-        });
+        </script>
 
-    </script>
-
-    <style>
-        .bg-dark {
-            background-color: #9cd494 !important;
-        }
-
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
+        <style>
+            .navbar-dark .navbar-nav .nav-link {
+                color: white;
             }
-        }
 
-        body {
-            padding-bottom: 0rem;
-        }
+            .bg-dark {
+                background-color: #84cb74 !important;
+            }
 
-        .items {
-            width: 90%;
-            margin: 0px auto;
-            margin-top: 100px;
-        }
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+            }
 
-        .slick-slide {
-            margin: 10px;
-            border-left: 1px solid #2c5c84;
-            border-right: 1px solid #2c5c84;
-            height: 450px;
-            max-height: 450px;
-        }
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                    font-size: 3.5rem;
+                }
+            }
 
-        .slick-slide img {
-            width: 100%;
-            border: 0px solid #000000;
-            height: 250px;
-        }
+            body {
+                padding-bottom: 0rem;
+            }
 
-        .slick-next:before {
-            color: black;
-        }
+            .items {
+                width: 90%;
+                margin: 0px auto;
+                margin-top: 100px;
+            }
 
-        .slick-prev:before {
-            color: black;
-        }
+            .slick-slide {
+                margin: 10px;
 
-        .whatsapp {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 40px;
-            right: 40px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            z-index: 100;
-        }
+            }
 
-        .whatsapp-icon {
-            margin-top: 13px;
-        }
+            div#contenidoCarousel {
+                margin-top: 12px;
+                padding: 15px;
+                border-left: 1px solid #000;
+                border-right: 1px solid #000;
+                border-bottom: 1px solid #000;
+                border-top: 1px solid #000;
+                border-radius: 15px;
+                max-height: 400px !important;
+                height: 285px;
+            }
 
-        .whatsapp:hover {
-            color: black;
-        }
-    </style>
+            .slick-slide img {
+                width: 100%;
+                border: 0px solid #000000;
+                height: 250px;
+            }
 
-</head>
+            .slick-next:before {
+                color: black;
+            }
 
-<body style="cursor: auto;">
+            .slick-prev:before {
+                color: black;
+            }
 
-    <a href="https://wa.me/573508382041?text=Me gustaría contactarme con ustedes" class="whatsapp" target="_blank"> <i
-            class="fa fa-whatsapp whatsapp-icon"></i></a>
+            .whatsapp {
+                position: fixed;
+                width: 60px;
+                height: 60px;
+                bottom: 40px;
+                right: 40px;
+                background-color: #25d366;
+                color: #FFF;
+                border-radius: 50px;
+                text-align: center;
+                font-size: 30px;
+                z-index: 100;
+            }
 
-    <div id="viva-subtitle-frame" class="viva-subtitle-frame"
-        style="top: 16px; visibility: hidden; min-width: 640px; left: 50%; transform: translateX(-304px); pointer-events: none;">
-        <div class="viva-subtitle-wrapper text-size__undefined"></div>
-        <div class="resize-container__right"></div>
-        <div class="resize-container__left"></div>
-        <div class="resize-container__bottom"></div>
-        <div class="resize-container__top"></div>
-        <div class="resize-container__diagonal-left-bottom"></div>
-        <div class="resize-container__diagonal-left-top"></div>
-        <div class="resize-container__diagonal-right-bottom"></div>
-        <div class="resize-container__diagonal-right-top"></div>
-    </div>
+            .whatsapp-icon {
+                margin-top: 13px;
+            }
+
+            .whatsapp:hover {
+                color: black;
+            }
+
+            a {
+                color: #2d5c84;
+                text-decoration: auto;
+            }
+
+            a:hover {
+                color: #2d5c84;
+            }
+
+            h3 {
+                color: #2d5c84;
+            }
 
 
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <div class="container-fluid">
-                <img src="../source/Log BIC1.png" alt="Logo" style="height: 40px;">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item">
-                            <strong><a class="nav-link" href="../pages/Index.html">Inicio</a></strong>
-                        </li>
-                        <li class="nav-item">
-                            <strong>
-                                <a class="nav-link" href="../pages/R&A.html">Recolección y Aprovechamiento</a>
-                            </strong>
-                        </li>
-                        <li class="nav-item">
-                            <strong>
-                                <a class="nav-link" href="../pages/Compomiso_Ambiental.html">Compromiso Ambiental</a>
-                            </strong>
-                        </li>
-                        <li class="nav-item">
-                            <strong>
-                                <a class="nav-link" href="../pages/Contacto.html">Contacto</a>
-                            </strong>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-outline-light" type="submit">Buscar</button>
-                    </form>
+            h2 {
+                color: #2d5c84;
+            }
+
+            span.text-muted {
+                color: #2D5C85 !important;
+            }
+        </style>
+
+    </head>
+
+    <body style="cursor: auto;">
+
+        <a href="https://wa.me/573508382041?text=Me gustaría contactarme con ustedes" class="whatsapp" target="_blank"> <i
+                class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+        <div id="viva-subtitle-frame" class="viva-subtitle-frame"
+            style="top: 16px; visibility: hidden; min-width: 640px; left: 50%; transform: translateX(-304px); pointer-events: none;">
+            <div class="viva-subtitle-wrapper text-size__undefined"></div>
+            <div class="resize-container__right"></div>
+            <div class="resize-container__left"></div>
+            <div class="resize-container__bottom"></div>
+            <div class="resize-container__top"></div>
+            <div class="resize-container__diagonal-left-bottom"></div>
+            <div class="resize-container__diagonal-left-top"></div>
+            <div class="resize-container__diagonal-right-bottom"></div>
+            <div class="resize-container__diagonal-right-top"></div>
+        </div>
+
+
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <div class="container-fluid">
+                    <a class="nav-link" href="../pages/Index.html">
+                        <img src="../source/Log BIC1.png" alt="Logo" style="height: 65px;">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                            <li class="nav-item">
+                                <strong><a class="nav-link" href="../pages/Index.html">Inicio</a></strong>
+                            </li>
+                            <li class="nav-item">
+                                <strong>
+                                    <a class="nav-link" href="../pages/R&A.html">Recolección y Aprovechamiento</a>
+                                </strong>
+                            </li>
+                            <li class="nav-item">
+                                <strong>
+                                    <a class="nav-link" href="../pages/Compomiso_Ambiental.html">Compromiso Ambiental</a>
+                                </strong>
+                            </li>
+                            <li class="nav-item">
+                                <strong>
+                                    <a class="nav-link" href="../pages/Contacto.html">Contacto</a>
+                                </strong>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline-light" type="submit">Buscar</button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
 
-    <main>
+        <main>
 
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
-                    aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
-                    class=""></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../source/Banner_1.jpg" class="d-block w-100" alt="Wild Landscape">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
+                        aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                        class=""></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../source/Banner_1.jpg" class="d-block w-100" alt="Wild Landscape">
 
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Recolección y Aprovechamiento de Materiales Reciclables</h1>
-                            <p>¿Qué tipo de materiales recuperamos?</p>
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1>Recolección y Aprovechamiento de Materiales Reciclables</h1>
+                                <p>¿Qué tipo de materiales recuperamos?</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-        </div>
-
-
-        <div class="container marketing">
-
-            <div class="items">
-                <div>
-                    <img src="../source/madera 2.jpg" alt="Madedra">
-                    <h2 style="text-align: center;">Madera</h2>
-                    <ol>
-                        <li>Estibas.</li>
-                        <li>Tablas.</li>
-                        <li>Tablones.</li>
-                        <li>Madera de diferente medida.</li>
-                    </ol>
-                </div>
-                <div>
-                    <img src="../source/plastico.jpg" alt="Madedra">
-                    <h2 style="text-align: center;">Plástico</h2>
-                    <ol>
-                        <li>Retal.</li>
-                        <li>Tapas.</li>
-                        <li>Bolsa.</li>
-                        <li>Botellas.</li>
-                    </ol>
-                </div>
-                <div>
-                    <img src="../source/Cartón.jpeg" alt="Madedra">
-                    <h2 style="text-align: center;">Cartón</h2>
-                    <ol>
-                        <li>Plegadiza.</li>
-                        <li>Láminas de cartón.</li>
-                        <li>Cajas de diferentes tamaños.</li>
-                        <li>Tetra Pack.</li>
-                        <li>Polyboard.</li>
-                    </ol>
-                </div>
-                <div>
-                    <img src="../source/papel.jpg" alt="Madedra">
-                    <h2 style="text-align: center;">Papel</h2>
-                    <ol>
-                        <li>Archivo.</li>
-                        <li>Periódico.</li>
-                        <li>Karft.</li>
-                    </ol>
-                </div>
-                <div>
-                    <img src="../source/aluminio.jpg" alt="Madedra">
-                    <h2 style="text-align: center;">Material Métalico</h2>
-                    <ol>
-                        <li>Aluminio.</li>
-                        <li>Hierro.</li>
-                        <li>Otros.</li>
-                    </ol>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
             </div>
 
-            <p class="featurette-heading" style="text-align: center;">Generamos certificado de aprovechamiento</p>
 
-            <hr class="featurette-divider">
+            <div class="container marketing">
 
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 style="text-align: center;">¿Estás interesado?</h2>
-                    <br>
-                    <p class="lead">Escríbenos a <a href="mailto:reciclajesavilla@hotmail">reciclajesavilla@hotmail</a>
-                        para obtener más información.
-                    </p>
+                <div class="items">
+                    <div>
+                        <img src="../source/madera 2.jpg" alt="Madedra" style="border-radius: 15px;">
+
+                        <div id="contenidoCarousel">
+                            <h2 style="text-align: center;">Madera</h2>
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Estibas.</li>
+                                <li class="list-group-item">Tablas.</li>
+                                <li class="list-group-item">Tablones.</li>
+                                <li class="list-group-item">Madera de diferente medida.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="../source/plastico.jpg" alt="Madedra" style="border-radius: 15px;">
+
+                        <div id="contenidoCarousel">
+                            <h2 style="text-align: center;">Plástico</h2>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Retal.</li>
+                                <li class="list-group-item">Tapas.</li>
+                                <li class="list-group-item">Bolsa.</li>
+                                <li class="list-group-item">Botellas.</li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <div>
+                        <img src="../source/Cartón.jpeg" alt="Madedra" style="border-radius: 15px;">
+
+
+                        <div id="contenidoCarousel">
+                            <h2 style="text-align: center;">Cartón</h2>
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Plegadiza.</li>
+                                <li class="list-group-item">Láminas de cartón.</li>
+                                <li class="list-group-item">Cajas de diferentes tamaños.</li>
+                                <li class="list-group-item">Tetra Pack.</li>
+                                <li class="list-group-item">Polyboard.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div>
+                        <img src="../source/papel.jpg" alt="Madedra" style="border-radius: 15px;">
+
+                        <div id="contenidoCarousel">
+                            <h2 style="text-align: center;">Papel</h2>
+
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Archivo.</li>
+                                <li class="list-group-item">Periódico.</li>
+                                <li class="list-group-item">Karft.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div>
+                        <img src="../source/aluminio.jpg" alt="Madedra" style="border-radius: 15px;">
+
+                        <div id="contenidoCarousel">
+                            <h2 style="text-align: center;">Material Métalico</h2>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Aluminio.</li>
+                                <li class="list-group-item">Hierro.</li>
+                                <li class="list-group-item">Otros.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <p class="featurette-heading" style="text-align: center;">Generamos certificado de aprovechamiento</p>
+
+                <hr class="featurette-divider">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 style="text-align: center;">¿Estás interesado?</h2>
+                        <br>
+                        <p class="lead">Escríbenos a <a href="mailto:reciclajesavilla@hotmail">reciclajesavilla@hotmail</a>
+                            para obtener más información.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- FOOTER -->
+            <!-- FOOTER -->
 
-        <footer class="bg-dark text-center text-white">
-            <!-- Grid container -->
-            <div class="container p-4 pb-0">
-                <!-- Section: Social media -->
-                <section class="mb-4">
+            <footer class="bg-dark text-center text-white">
+                <!-- Grid container -->
+                <div class="container p-4 pb-0">
+                    <!-- Section: Social media -->
+                    <section class="mb-4">
 
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                            class="fa fa-facebook"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fa fa-facebook"></i></a>
 
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                            class="fa fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fa fa-twitter"></i></a>
 
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                            class="fa fa-google"></i></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fa fa-google"></i></i></a>
 
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                            class="fa fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fa fa-instagram"></i></a>
 
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                            class="fa fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                                class="fa fa-youtube"></i></a>
 
-                </section>
-            </div>
+                    </section>
+                </div>
 
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                <strong>Dirección:</strong> Cra 86B # 42-06 Sur, Patio Bonito, Bogotá DC. <strong>WhatsApp:</strong> +57
-                3508382041
-                <strong>Tel:</strong> (601) 4815874 <strong>Cel:</strong> 3508382043 <strong>Email:</strong>
-                reciclajesavilla@hotmail.com
-            </div>
-            <!-- Copyright -->
-        </footer>
-    </main>
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    <strong>Dirección:</strong> Cra 86B # 42-06 Sur, Patio Bonito, Bogotá DC. <strong>WhatsApp:</strong> +57
+                    3508382041
+                    <strong>Tel:</strong> (601) 4815874 <strong>Cel:</strong> 3508382043 <strong>Email:</strong>
+                    reciclajesavilla@hotmail.com
+                </div>
+                <!-- Copyright -->
+            </footer>
+        </main>
 
-</body>
+    </body>
 
-</html>
+    </html>
