@@ -5,31 +5,38 @@ pool:
   name: default
 
 steps:
-- script: |
-    $JiraUrl = "https://cerqueradaniel.atlassian.net/"
-    $JiraUsername = "your-jira-username"
-    $JiraToken = "your-jira-api-token"
+- powershell: |
+    $url = '<url>/rest/api/2/issue'
+    $base64AuthInfo = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(("username" + ":" + "password")))
 
-    $Headers = @{
-        Authorization = "Bearer $JiraApiToken"
-        ContentType = "application/json"
+    $headers = @{
+        "Authorization" = "Basic $base64AuthInfo"
+        "Content-Type" = "application/json"
     }
 
-    $RequestBody = @{
-        fields = @{
-            project = @{
-                key = "YOURPROJECT"
-            }
-            summary = "Your task summary"
-            description = "Your task description"
-            issuetype = @{
-                name = "Task"
-            }
+    $jira_summary = 'This is the issue summary'
+    $jira_description = 'This is the issue description'
+
+    $json_data = @"
+    {
+        "fields":{
+            "project":{
+                "key":"ABC"
+            },
+            "summary": "$jira_summary",
+            "components":[
+                {"name":"Component1"}
+            ],
+            "issuetype":{
+                "name":"Story"
+            },
+            "description": "$jira_description"
         }
-    } | ConvertTo-Json
+    }
+    "@
 
-    $response = Invoke-RestMethod -Uri $JiraUrl -Headers $Headers -Method Post -Body $RequestBody
+    $response = Invoke-RestMethod -Uri $url -Method Post -Headers $headers -Body $json_data
 
-    Write-Host "Jira response:"
-    $response
-  displayName: 'Creación Task Jira'
+    $parent_key = $response.key
+    Write-Host "Created parent issue $parent_key"
+  displayName: 'Create Jira Task'
