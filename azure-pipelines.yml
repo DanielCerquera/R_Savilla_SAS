@@ -5,7 +5,6 @@ pool:
   name: default
 
 steps:
-- task: PowerShell@2
 - script: |
     $JiraUrl = "https://cerqueradaniel.atlassian.net/"
     $JiraUsername = "cerqueradaniel@outlook.com"
