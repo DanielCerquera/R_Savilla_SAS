@@ -1,8 +1,3 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
 trigger:
 - main
 
@@ -10,10 +5,36 @@ pool:
   name: default
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.x'
+    addToPath: true
 
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+    $JiraUrl = "https://cerqueradaniel.atlassian.net/"
+    $JiraUsername = "cerqueradaniel@outlook.com"
+    $JiraToken = "ATATT3xFfGF0txwFzBvTlVg5zQOqQM8sM__qsMzqLm1ZgLRSfAMs2mU3wfvPc12rY0Ls_K1DVGUDbp25zQKorucoZUMTs9Nbe6ND2KHll22zTP_N29iJHOto6j5aRiY8QFyKMw-Q7LibaZNNo2RjoCDyPzVVRCqSqy-MieXlFm3ucgtLDJdFU70=5773B6B9"
+
+    $Headers = @{
+        Authorization = "Basic " + [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes("$($JiraUsername):$($JiraToken)"))
+        ContentType = "application/json"
+    }
+
+    $RequestBody = @{
+        fields = @{
+            project = @{
+                key = "SCRUM"
+            }
+            summary = "Task Integration With Jira Title"
+            description = "Task Integration With Jira Description"
+            issuetype = @{
+                name = "Task"
+            }
+        }
+    } | ConvertTo-Json
+
+    $response = Invoke-RestMethod -Uri $JiraUrl -Headers $Headers -Method Post -Body $RequestBody
+
+    Write-Host "Jira response:"
+    $response
+  displayName: 'Create Jira Task'
