@@ -5,38 +5,32 @@ pool:
   name: default
 
 steps:
-- powershell: |
-    $url = '<url>/rest/api/2/issue'
-    $base64AuthInfo = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(("username" + ":" + "password")))
+- task: PowerShell@2
+- script: |
+    $JiraUrl = "https://cerqueradaniel.atlassian.net/"
+    $JiraUsername = "cerqueradaniel@outlook.com"
+    $JiraToken = "ATATT3xFfGF0txwFzBvTlVg5zQOqQM8sM__qsMzqLm1ZgLRSfAMs2mU3wfvPc12rY0Ls_K1DVGUDbp25zQKorucoZUMTs9Nbe6ND2KHll22zTP_N29iJHOto6j5aRiY8QFyKMw-Q7LibaZNNo2RjoCDyPzVVRCqSqy-MieXlFm3ucgtLDJdFU70=5773B6B9"
 
-    $headers = @{
-        "Authorization" = "Basic $base64AuthInfo"
-        "Content-Type" = "application/json"
+    $Headers = @{
+        Authorization = "Basic " + [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes("$($JiraUsername):$($JiraToken)"))
+        ContentType = "application/json"
     }
 
-    $jira_summary = 'This is the issue summary'
-    $jira_description = 'This is the issue description'
-
-    $json_data = @"
-    {
-        "fields":{
-            "project":{
-                "key":"ABC"
-            },
-            "summary": "$jira_summary",
-            "components":[
-                {"name":"Component1"}
-            ],
-            "issuetype":{
-                "name":"Story"
-            },
-            "description": "$jira_description"
+    $RequestBody = @{
+        fields = @{
+            project = @{
+                key = "SCRUM"
+            }
+            summary = "Task Integration With Jira Title"
+            description = "Task Integration With Jira Description"
+            issuetype = @{
+                name = "Task"
+            }
         }
-    }
-    "@
+    } | ConvertTo-Json
 
-    $response = Invoke-RestMethod -Uri $url -Method Post -Headers $headers -Body $json_data
+    $response = Invoke-RestMethod -Uri $JiraUrl -Headers $Headers -Method Post -Body $RequestBody
 
-    $parent_key = $response.key
-    Write-Host "Created parent issue $parent_key"
+    Write-Host "Jira response:"
+    $response
   displayName: 'Create Jira Task'
