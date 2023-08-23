@@ -6,7 +6,7 @@ pool:
 
 steps:
 - script: |
-    $JiraUrl = "https://your-jira-instance.atlassian.net/rest/api/2/issue/"
+    $JiraUrl = "https://cerqueradaniel.atlassian.net/"
     $JiraUsername = "your-jira-username"
     $JiraToken = "your-jira-api-token"
 
