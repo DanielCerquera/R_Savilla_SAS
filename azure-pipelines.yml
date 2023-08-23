@@ -11,7 +11,7 @@ steps:
     $JiraToken = "your-jira-api-token"
 
     $Headers = @{
-        Authorization = "Basic " + [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes("$($JiraUsername):$($JiraToken)"))
+        Authorization = "Bearer $JiraApiToken"
         ContentType = "application/json"
     }
 
