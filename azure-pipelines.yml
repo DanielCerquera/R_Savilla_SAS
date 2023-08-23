@@ -9,20 +9,14 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      $JiraUrl = "https://your-jira-instance.atlassian.net/rest/api/2/issue/"
-      $JiraUsername = "your-jira-username"
-      $JiraToken = "your-jira-api-token"
-        
-        curl -X POST -H "Content-Type: application/json" -u "$username:$password" -d '{
-        "fields": {
-          "project": {
-            "key": "SCRUM"
-          },
-          "summary": "Task Integration With Jira Title",
-          "issuetype": {
-            "name": "Task"
-          }
-        }
-      }' https://cerqueradaniel.atlassian.net/rest/api/3/issue
+      curl --request POST \
+        --url 'https://your-domain.atlassian.net/rest/api/3/issue/archive' \
+        --user 'email@example.com:<api_token>' \
+        --header 'Accept: application/json' \
+        --header 'Content-Type: application/json' \
+        --data '{
+        "jql": "project = FOO AND updated < -2y"
+      }'
+
       
   displayName: 'Create Jira Task'
