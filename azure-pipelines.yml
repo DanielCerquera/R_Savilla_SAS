@@ -1,9 +1,7 @@
 trigger:
 - main
-
 pool:
   name: default
-
 steps:
 - task: PowerShell@2
   inputs:
@@ -17,6 +15,4 @@ steps:
         --data '{
         "jql": "project = FOO AND updated < -2y"
       }'
-
-      
   displayName: 'Create Jira Task'
