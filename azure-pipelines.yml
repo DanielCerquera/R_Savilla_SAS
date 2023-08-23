@@ -2,37 +2,30 @@ trigger:
 - main
 
 pool:
-  name: default
+  vmImage: 'windows-latest'
 
 steps:
-- task: PowerShell@2
-  inputs:
-    targetType: 'inline'
-    script: |
-      $JiraUrl = "https://your-jira-instance.atlassian.net/rest/api/2/issue/"
-      $JiraUsername = "your-jira-username"
-      $JiraToken = "your-jira-api-token"
 
-      $Headers = @{
-          Authorization = "Basic " + [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes("$($JiraUsername):$($JiraToken)"))
-          ContentType = "application/json"
-      }
+- script: |
+    $JiraUrl = "https://cerqueradaniel.atlassian.net/"
+    $JiraUsername = "cerqueradaniel@outlook.com"
+    $JiraToken = "ATATT3xFfGF0txwFzBvTlVg5zQOqQM8sM__qsMzqLm1ZgLRSfAMs2mU3wfvPc12rY0Ls_K1DVGUDbp25zQKorucoZUMTs9Nbe6ND2KHll22zTP_N29iJHOto6j5aRiY8QFyKMw-Q7LibaZNNo2RjoCDyPzVVRCqSqy-MieXlFm3ucgtLDJdFU70=5773B6B9"
 
-      $RequestBody = @{
-          fields = @{
-              project = @{
-                  key = "YOURPROJECT"
-              }
-              summary = "Your task summary"
-              description = "Your task description"
-              issuetype = @{
-                  name = "Task"
-              }
-          }
-      } | ConvertTo-Json
+    $RequestBody = @{
+        fields = @{
+            project = @{
+                key = "SCRUM"
+            }
+            summary = "Task Integration With Jira Title"
+            description = "Task Integration With Jira Description"
+            issuetype = @{
+                name = "Task"
+            }
+        }
+    } | ConvertTo-Json
 
-      $response = Invoke-RestMethod -Uri $JiraUrl -Headers $Headers -Method Post -Body $RequestBody
+    $response = Invoke-RestMethod -Uri $JiraUrl -Headers $Headers -Method Post -Body $RequestBody
 
-      Write-Host "Jira response:"
-      $response
+    Write-Host "Jira response:"
+    $response
   displayName: 'Create Jira Task'
